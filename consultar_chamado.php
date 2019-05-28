@@ -1,6 +1,18 @@
 <?php 
 require_once "validador_acesso.php";
 ?>
+
+<?php 
+  
+  $arquivo = fopen('arquivo.k', 'r');
+  //enquanto ouverem linhas a serem recuperadas
+  while (!feof($arquivo)) { // feof() percorre um arquivo até identificar o final do arquivo
+    $registro = fgets($arquivo);//recupera o que estiver na linha
+  }
+
+  fclose($arquivo);
+
+ ?>
 <html>
 <head>
   <meta charset="utf-8" />
